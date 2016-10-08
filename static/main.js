@@ -86,13 +86,29 @@ function setup()
     // var keyR = keyboard(82);
     keyQ.press = function() {
         console.log("train Worker");
-        spawn(1,0);
+        spawn(0,0);
     };
     keyW.press = function() {
         console.log("train soldier");
-        spawn(1,1);
+        spawn(0,1);
     };
     keyE.press = function() {
+        console.log("train wizard");
+        spawn(0,2);
+    };
+    var keyA = keyboard(65);
+    var keyS = keyboard(83);
+    var keyD = keyboard(68);
+    // var keyR = keyboard(82);
+    keyA.press = function() {
+        console.log("train Sorker");
+        spawn(1,0);
+    };
+    keyS.press = function() {
+        console.log("train soldier");
+        spawn(1,1);
+    };
+    keyD.press = function() {
         console.log("train wizard");
         spawn(1,2);
     };
